@@ -10,7 +10,7 @@ button:focus {
 }
 
 header {
-  background: #201F1F;
+  background: #000000;
 }
 
 header .container .navbar {
@@ -73,9 +73,6 @@ header .container .navbar .collapse .nav-link {
   display: inline-block;
   text-decoration: none;
   position: relative;
-  -webkit-transition: all 0.6s;
-  -o-transition: all 0.6s;
-  transition: all 0.6s;
 }
 
 header .container .navbar .collapse .nav-link::before {
@@ -436,11 +433,14 @@ header .navbar-light .navbar-toggler-icon {
   -webkit-align-items: center;
   -ms-flex-align: center;
   align-items: center;
+  -webkit-flex-wrap: wrap;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
 }
 
 .about_us .about .about_div .about_img {
   height: 320px;
-  width: 40%;
+  width: 507px;
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -474,7 +474,7 @@ header .navbar-light .navbar-toggler-icon {
 }
 
 .about_us .about .about_div .about_text {
-  width: 60%;
+  width: 730px;
   color: white;
   padding-top: 45px;
 }
