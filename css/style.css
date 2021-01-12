@@ -154,9 +154,9 @@ header .navbar-light .navbar-toggler-icon {
   }
 
   50% {
-    background: #ffffff;
-    -webkit-box-shadow: 0 0px 20px 3px #ffffff;
-    box-shadow: 0 0px 20px 3px #ffffff;
+    background: #000000;
+    -webkit-box-shadow: 0 0px 20px 3px #000000;
+    box-shadow: 0 0px 20px 3px #000000;
   }
 
   100% {
@@ -174,9 +174,9 @@ header .navbar-light .navbar-toggler-icon {
   }
 
   50% {
-    background: #ffffff;
-    -webkit-box-shadow: 0 0px 20px 3px #ffffff;
-    box-shadow: 0 0px 20px 3px #ffffff;
+    background: #000000;
+    -webkit-box-shadow: 0 0px 20px 3px #000000;
+    box-shadow: 0 0px 20px 3px #000000;
   }
 
   100% {
@@ -441,7 +441,7 @@ header .navbar-light .navbar-toggler-icon {
 
 .about_us .about .about_div .about_img {
   height: 320px;
-  width: 507px;
+  width: 30%;
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -460,6 +460,8 @@ header .navbar-light .navbar-toggler-icon {
 .about_us .about .about_div .about_img .image_bg_shadow {
   -webkit-box-shadow: 0 0 30px 10px #660000;
   box-shadow: 0 0 30px 10px #660000;
+  -webkit-animation: red_shadow 4s linear infinite;
+  animation: red_shadow 4s linear infinite;
   min-width: 310px;
   min-height: 310px;
   display: -webkit-box;
@@ -478,9 +480,10 @@ header .navbar-light .navbar-toggler-icon {
 }
 
 .about_us .about .about_div .about_text {
-  width: 730px;
+  width: 70%;
   color: white;
   padding-top: 25px;
+  padding: 0 30px;
 }
 
 .about_us .about .about_div .about_text h3 {
@@ -495,4 +498,38 @@ header .navbar-light .navbar-toggler-icon {
   font-size: 18px;
   font-family: 'Rubik', sans-serif;
   font-weight: 400;
+}
+
+@-webkit-keyframes red_shadow {
+  0% {
+    -webkit-box-shadow: 0 0 30px 10px #660000;
+    box-shadow: 0 0 30px 10px #660000;
+  }
+
+  50% {
+    -webkit-box-shadow: 0 0 30px 10px #ff0000;
+    box-shadow: 0 0 30px 10px #ff0000;
+  }
+
+  100% {
+    -webkit-box-shadow: 0 0 30px 10px #660000;
+    box-shadow: 0 0 30px 10px #660000;
+  }
+}
+
+@keyframes red_shadow {
+  0% {
+    -webkit-box-shadow: 0 0 30px 10px #660000;
+    box-shadow: 0 0 30px 10px #660000;
+  }
+
+  50% {
+    -webkit-box-shadow: 0 0 30px 10px #ff0000;
+    box-shadow: 0 0 30px 10px #ff0000;
+  }
+
+  100% {
+    -webkit-box-shadow: 0 0 30px 10px #660000;
+    box-shadow: 0 0 30px 10px #660000;
+  }
 }
