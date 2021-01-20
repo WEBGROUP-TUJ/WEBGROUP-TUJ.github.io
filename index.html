@@ -8,7 +8,7 @@
     <meta name="msapplication-navbutton-color" content="#201F1F">
     <meta name="apple-mobile-web-app-status-bar-style" content="#201F1F">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="shortcut icon" href="img/Group 1.png" />
+    <link rel="shortcut icon" href="img/logo1.png" />
     <title>WEB GROUP</title>
     <!-- ===========ШРИФТЫ================= -->
     <link rel="preconnect" href="https://fonts.gstatic.com">
@@ -23,38 +23,41 @@
     <!-- ============================================== -->
 
     <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/animate.css">
     <link rel="stylesheet" href="fonts/fonts.css">
-    <link rel="stylesheet" href="css/owl.carousel.min.css">
-    <link rel="stylesheet" href="css/owl.theme.default.min.css">
     <script defer src="js/jquery-3.2.1.min.js"></script>
-    <script defer src="js/owl.carousel.min.js"></script>
     <script defer src="js/script.js"></script>
+
+    <script src="js/wow.min.js"></script>
+    <script>
+        new WOW().init();
+    </script>
 </head>
 
 <body>
     <header>
         <div class="container">
             <nav class="navbar navbar-expand-lg navbar-light">
-                <a class="navbar-brand" href="#"><img src="img/Group 1.png" alt=""></a>
+                <a class="wow fadeInLeft navbar-brand" href="#"><img src="img/Group 1.png" alt=""></a>
                 <button class="navbar-toggler" type="button" data-toggle="collapse"
                     data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
                     aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"> </span>
                 </button>
 
-                <div class="wow slideInRight collapse navbar-collapse" id="navbarSupportedContent">
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
                     <ul class="navbar-nav nav-1 mr-auto">
-                        <li class="nav-item active">
+                        <li class="wow fadeInUp nav-item active" data-wow-delay="0.5s">
                             <a class="nav-link nav-a" href="#">Главная<span class="sr-only">(current)</span></a>
                         </li>
 
-                        <li class="nav-item">
+                        <li class="wow fadeInUp nav-item" data-wow-delay="1s">
                             <a class="nav-link nav-a" href="#">Наши работы</a>
                         </li>
-                        <li class="nav-item">
+                        <li class="wow fadeInUp nav-item" data-wow-delay="1.5s">
                             <a class="nav-link nav-a" href="#">Прайс лист</a>
                         </li>
-                        <li class="nav-item">
+                        <li class="wow fadeInUp nav-item" data-wow-delay="2s">
                             <a class="nav-link nav-a phone-num" href="#">+998 90 015 36 24</a>
                         </li>
                     </ul>
@@ -66,8 +69,7 @@
     <main>
         <section class="banner">
             <div class="container">
-                <div class="banner_div">
-
+                <div class="wow zoomIn banner_div" data-wow-duration="3s">
                     <svg viewBox="0 0 1320 300">
 
                         <!-- Symbol -->
@@ -90,7 +92,7 @@
                             class="merts">|</span></p>
                 </div>
             </div>
-            <img src="img/mac.png" alt="">
+            <img class="wow zoomIn" src="img/mac.png" alt="">
         </section>
 
 
@@ -104,31 +106,52 @@
             </div>
 
             <div class="about">
-                <h2>О нас</h2>
+                <h2 class="wow bounceInUp" data-wow-duration="1s">О нас</h2>
                 <div class="about_div">
-                    <div class="about_img">
+                    <div class="wow fadeInLeft about_img" data-wow-duration="1s">
                         <div class="image_bg_shadow">
                             <img src="img/Rectangle 8.png" alt="">
                         </div>
                     </div>
                     <div class="about_text">
-                        <h3>Разработка сайта</h3>
-                        <p>Создание уникального сайта для любой сферы. Наши веб-дизайнеры и разработчики имеют большой
+                        <h3 class="wow fadeInRight" data-wow-duration="1s">Разработка сайта</h3>
+                        <p class="wow fadeInRight " data-wow-delay="0.3s" data-wow-duration="1s">Создание уникального сайта для любой сферы. Наши
+                            веб-дизайнеры и разработчики имеют большой
                             опыт в сфере разработки сайтов и имеют сертификаты и лицензии. WEB Group готов создать для
                             вас сайт который поможет в развитии бизнеса.<span class="merts">|</span></p>
                     </div>
                 </div>
                 <div class="about_div">
                     <div class="about_text">
-                        <h3>Посты для социальных сетей</h3>
-                        <p>Социальные сети как Instagram, Facebook хорошо известны в публике. И что бы хорошо развивать свой аккаунт придётся публиковать красивые посты. WEB Group при этом вам поможет. Мы для вас создадим красивые посты на любой вкус. Мы гарантируем на качество и на завлекательность поста. <span class="merts">|</span></p>
+                        <h3 class="wow fadeInLeft" data-wow-duration="1s">Посты для социальных сетей</h3>
+                        <p class="wow fadeInLeft" data-wow-delay="0.3s" data-wow-duration="1s">Социальные сети как Instagram, Facebook хорошо известны в
+                            публике. И что бы хорошо развивать
+                            свой аккаунт придётся публиковать красивые посты. WEB Group при этом вам поможет. Мы для вас
+                            создадим красивые посты на любой вкус. Мы гарантируем на качество и на завлекательность
+                            поста. <span class="merts">|</span></p>
                     </div>
-                    <div class="about_img">
+                    <div class="wow fadeInRight about_img" data-wow-duration="1s">
                         <div class="image_bg_shadow">
                             <img src="img/Rectangle 10.png" alt="">
                         </div>
                     </div>
                 </div>
+
+
+
+                <h2 class="wow bounceInUp title" data-wow-duration="1s">Наши работы</h2>
+                <div class="our_works">
+                     <div class="work">
+                         <img src="img/Shop one page.png" alt="">
+                     </div>
+                     <div class="work">
+                         <img src="img/New Work.png" alt="">
+                     </div>
+                     <div class="work">
+                         <img src="img/Treehouse-Home.png" alt="">
+                     </div>
+                </div>
+                
             </div>
 
             <div class="bok">
@@ -136,6 +159,7 @@
             </div>
 
         </section>
+        
     </main>
     <footer></footer>
     <!-- ============================================== -->

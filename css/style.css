@@ -9,8 +9,14 @@ button:focus {
   outline: none;
 }
 
+main {
+  background: -webkit-gradient(linear, left bottom, right top, from(#ffffff), color-stop(#cacaca), color-stop(#979797), color-stop(#676767), color-stop(#3b3b3b), color-stop(#392f3b), color-stop(#3e2131), color-stop(#420f1d), color-stop(#710826), color-stop(#a20027), color-stop(#d2001f), to(#ff0000));
+  background: -o-linear-gradient(left bottom, #ffffff, #cacaca, #979797, #676767, #3b3b3b, #392f3b, #3e2131, #420f1d, #710826, #a20027, #d2001f, #ff0000);
+  background: linear-gradient(to right top, #ffffff, #cacaca, #979797, #676767, #3b3b3b, #392f3b, #3e2131, #420f1d, #710826, #a20027, #d2001f, #ff0000);
+}
+
 header {
-  background: #000000;
+  background: #000;
 }
 
 header .container .navbar {
@@ -30,6 +36,24 @@ header .container .navbar {
 
 header .container .navbar .navbar-brand {
   margin-right: 100px;
+  height: 60px;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+
+header .container .navbar .navbar-brand img {
+  width: 150px;
+  height: 30px;
 }
 
 header .container .navbar .collapse .navbar-nav {
@@ -382,7 +406,11 @@ header .navbar-light .navbar-toggler-icon {
   display: -ms-flexbox;
   display: flex;
   width: 100%;
-  background: #000;
+  background: -o-linear-gradient(135deg, #000000, #000000, #202020, #000000);
+  background: linear-gradient(-45deg, #000000, #000000, #202020, #000000);
+  background-size: 400% 400%;
+  -webkit-animation: gradient 15s ease infinite;
+  animation: gradient 15s ease infinite;
   padding: 50px 0;
 }
 
@@ -421,27 +449,23 @@ header .navbar-light .navbar-toggler-icon {
 }
 
 .about_us .about .about_div {
-  width: 100%;
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: justify;
-  -webkit-justify-content: space-between;
-  -ms-flex-pack: justify;
-  justify-content: space-between;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
   -webkit-box-align: center;
   -webkit-align-items: center;
   -ms-flex-align: center;
   align-items: center;
-  -webkit-flex-wrap: wrap;
-  -ms-flex-wrap: wrap;
-  flex-wrap: wrap;
+  margin-bottom: 30px;
 }
 
 .about_us .about .about_div .about_img {
   height: 320px;
-  width: 30%;
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -476,14 +500,19 @@ header .navbar-light .navbar-toggler-icon {
   -webkit-align-items: center;
   -ms-flex-align: center;
   align-items: center;
-  background: url(../img/3UXi.gif) 50% 50% / cover;
+  background: url(../img/ezgif.com-gif-maker.gif) 50% 50% / cover;
+}
+
+.about_us .about .about_div .about_img img {
+  width: 90%;
+  height: 90%;
+  -webkit-animation: animation_img 6s linear infinite;
+  animation: animation_img 6s linear infinite;
 }
 
 .about_us .about .about_div .about_text {
-  width: 70%;
   color: white;
-  padding-top: 25px;
-  padding: 0 30px;
+  margin-right: 45px;
 }
 
 .about_us .about .about_div .about_text h3 {
@@ -498,6 +527,77 @@ header .navbar-light .navbar-toggler-icon {
   font-size: 18px;
   font-family: 'Rubik', sans-serif;
   font-weight: 400;
+}
+
+.about_us .about .about_div .about_text:nth-of-type(even) {
+  color: white;
+  margin-right: 0px;
+  margin-left: 45px;
+}
+
+.about_us .about .about_div .about_text:nth-of-type(even) h3 {
+  text-shadow: 0 0 10px red;
+  font-size: 30px;
+  font-family: 'Rubik', sans-serif;
+  margin-bottom: 20px;
+}
+
+.about_us .about .about_div .about_text:nth-of-type(even) p {
+  text-align: justify;
+  font-size: 18px;
+  font-family: 'Rubik', sans-serif;
+  font-weight: 400;
+}
+
+.about_us .about .title {
+  margin-top: 20px;
+}
+
+.about_us .about .our_works {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-justify-content: space-around;
+  -ms-flex-pack: distribute;
+  justify-content: space-around;
+  width: 100%;
+}
+
+.about_us .about .our_works .work {
+  width: 30%;
+}
+
+.about_us .about .our_works .work img {
+  width: 100%;
+}
+
+@-webkit-keyframes gradient {
+  0% {
+    background-position: 0% 50%;
+  }
+
+  50% {
+    background-position: 100% 50%;
+  }
+
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
+@keyframes gradient {
+  0% {
+    background-position: 0% 50%;
+  }
+
+  50% {
+    background-position: 100% 50%;
+  }
+
+  100% {
+    background-position: 0% 50%;
+  }
 }
 
 @-webkit-keyframes red_shadow {
