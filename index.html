@@ -22,10 +22,11 @@
     <!-- font-family: 'Rhodium Libre', serif; -->
     <!-- ============================================== -->
 
-    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/style-min.css">
     <link rel="stylesheet" href="css/animate.css">
     <link rel="stylesheet" href="fonts/fonts.css">
     <script defer src="js/jquery-3.2.1.min.js"></script>
+    <script defer src="js/preloader.js"></script>
     <script defer src="js/script.js"></script>
 
     <script src="js/wow.min.js"></script>
@@ -35,10 +36,14 @@
 </head>
 
 <body>
+    <div id="page-preloader" class="preloader">
+        <div class="loader"></div>
+        <h1>Для более корректной работы сайта используте Компьютер</h1>
+    </div>
     <header>
         <div class="container">
             <nav class="navbar navbar-expand-lg navbar-light">
-                <a class="wow fadeInLeft navbar-brand" href="#"><img src="img/Group 1.png" alt=""></a>
+                <a class="wow fadeInLeft navbar-brand" data-wow-delay="3s" href="#"><img src="img/Group 1.png" alt=""></a>
                 <button class="navbar-toggler" type="button" data-toggle="collapse"
                     data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
                     aria-label="Toggle navigation">
@@ -47,17 +52,17 @@
 
                 <div class="collapse navbar-collapse" id="navbarSupportedContent">
                     <ul class="navbar-nav nav-1 mr-auto">
-                        <li class="wow fadeInUp nav-item active" data-wow-delay="0.5s">
+                        <li class="wow fadeInUp nav-item active" data-wow-delay="3.5s">
                             <a class="nav-link nav-a" href="#">Главная<span class="sr-only">(current)</span></a>
                         </li>
 
-                        <li class="wow fadeInUp nav-item" data-wow-delay="1s">
+                        <li class="wow fadeInUp nav-item" data-wow-delay="4s">
                             <a class="nav-link nav-a" href="#">Наши работы</a>
                         </li>
-                        <li class="wow fadeInUp nav-item" data-wow-delay="1.5s">
+                        <li class="wow fadeInUp nav-item" data-wow-delay="4.5s">
                             <a class="nav-link nav-a" href="#">Прайс лист</a>
                         </li>
-                        <li class="wow fadeInUp nav-item" data-wow-delay="2s">
+                        <li class="wow fadeInUp nav-item" data-wow-delay="5s">
                             <a class="nav-link nav-a phone-num" href="#">+998 90 015 36 24</a>
                         </li>
                     </ul>
@@ -69,7 +74,7 @@
     <main>
         <section class="banner">
             <div class="container">
-                <div class="wow zoomIn banner_div" data-wow-duration="3s">
+                <div class="wow zoomIn banner_div" data-wow-duration="3s" data-wow-delay="3s">
                     <svg viewBox="0 0 1320 300">
 
                         <!-- Symbol -->
@@ -142,6 +147,21 @@
                         </div>
                     </div>
                 </div>
+                <div class="about_div">
+                    <div class="wow fadeInRight about_img" data-wow-duration="1s">
+                        <div class="image_bg_shadow">
+                            <img src="img/Rectangle 10.png" alt="">
+                        </div>
+                    </div>
+                    <div class="about_text">
+                        <h3 class="wow fadeInLeft" data-wow-duration="1s">Посты для социальных сетей</h3>
+                        <p class="wow fadeInLeft" data-wow-delay="0.3s" data-wow-duration="1s">Социальные сети как Instagram, Facebook хорошо известны в
+                            публике. И что бы хорошо развивать
+                            свой аккаунт придётся публиковать красивые посты. WEB Group при этом вам поможет. Мы для вас
+                            создадим красивые посты на любой вкус. Мы гарантируем на качество и на завлекательность
+                            поста. <span class="merts">|</span></p>
+                    </div>
+                </div>
 
 
 
@@ -171,7 +191,6 @@
                 <img src="img/Vector (3).png" alt="">
                 <img src="img/Group 3.png" alt="">
                 <img src="img/Vector (5).png" alt="">
-
             </div>
 
         </section>
