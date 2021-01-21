@@ -353,7 +353,7 @@ header .navbar-light .navbar-toggler-icon {
   -webkit-flex-direction: column;
   -ms-flex-direction: column;
   flex-direction: column;
-  width: 100%;
+  width: 67%;
   -webkit-flex-wrap: wrap;
   -ms-flex-wrap: wrap;
   flex-wrap: wrap;
@@ -939,6 +939,10 @@ header .navbar-light .navbar-toggler-icon {
 }
 
 @media (max-width: 800px) {
+  .banner .container .banner_div {
+    width: 100%;
+  }
+
   .text {
     font-size: 160px;
   }
