@@ -31,19 +31,21 @@
 
     <script src="js/wow.min.js"></script>
     <script>
-        new WOW().init();
+        new WOW({
+            mobile:       false,       // default
+        }).init();
     </script>
 </head>
 
 <body>
-    <!-- <div id="page-preloader" class="preloader">
+    <div id="page-preloader" class="preloader">
         <div class="loader"></div>
         <h1>Для более корректной работы сайта используте Компьютер</h1>
-    </div> -->
+    </div>
     <header>
         <div class="container">
             <nav class="navbar navbar-expand-lg navbar-light">
-                <a class="wow fadeInLeft navbar-brand" data-wow-delay="3s" href="#"><img src="img/Group 1.png" alt=""></a>
+                <a class="wow fadeInLeft navbar-brand" href="#"><img src="img/Group 1.png" alt=""></a>
                 <button class="navbar-toggler" type="button" data-toggle="collapse"
                     data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
                     aria-label="Toggle navigation">
@@ -52,17 +54,17 @@
 
                 <div class="collapse navbar-collapse" id="navbarSupportedContent">
                     <ul class="navbar-nav nav-1 mr-auto">
-                        <li class="wow fadeInUp nav-item active" data-wow-delay="3.5s">
+                        <li class="wow fadeInUp nav-item active" data-wow-delay="0.5s">
                             <a class="nav-link nav-a" href="#">Главная<span class="sr-only">(current)</span></a>
                         </li>
 
-                        <li class="wow fadeInUp nav-item" data-wow-delay="4s">
+                        <li class="wow fadeInUp nav-item" data-wow-delay="1s">
                             <a class="nav-link nav-a" href="#">Наши работы</a>
                         </li>
-                        <li class="wow fadeInUp nav-item" data-wow-delay="4.5s">
+                        <li class="wow fadeInUp nav-item" data-wow-delay="1.5s">
                             <a class="nav-link nav-a" href="#">Прайс лист</a>
                         </li>
-                        <li class="wow fadeInUp nav-item" data-wow-delay="5s">
+                        <li class="wow fadeInUp nav-item" data-wow-delay="2s">
                             <a class="nav-link nav-a phone-num" href="#">+998 90 015 36 24</a>
                         </li>
                     </ul>
@@ -74,7 +76,7 @@
     <main>
         <section class="banner">
             <div class="container">
-                <div class="wow zoomIn banner_div" data-wow-duration="3s" data-wow-delay="3s">
+                <div class="wow zoomIn banner_div" data-wow-duration="3s">
                     <svg viewBox="0 0 1320 300">
 
                         <!-- Symbol -->
