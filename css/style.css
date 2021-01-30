@@ -9,6 +9,15 @@ button:focus {
   outline: none;
 }
 
+h1,
+h2,
+h3,
+h4,
+h5,
+p {
+  margin: 0;
+}
+
 .preloader {
   position: fixed;
   left: 0;
@@ -165,10 +174,6 @@ header .container .navbar .collapse .navbar-nav li {
   -webkit-align-items: center;
   -ms-flex-align: center;
   align-items: center;
-}
-
-header .container .navbar .collapse .nav-item {
-  display: inline-block;
 }
 
 header .container .navbar .collapse .nav-link {
@@ -699,6 +704,284 @@ header .navbar-light .navbar-toggler-icon {
   width: 100%;
 }
 
+.price_list {
+  padding: 50px 0;
+  background: url(../img/17973903.jpg) 50% 50% / cover;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+
+.price_list h2 {
+  font-family: 'Rubik', sans-serif;
+  font-size: 36px;
+  color: #ffffff;
+  padding: 0px 10px;
+  border-bottom: 3px #ffffff solid;
+  margin-bottom: 30px;
+}
+
+.price_list .container {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+}
+
+.price_list .price {
+  position: relative;
+  width: 100%;
+  text-align: justify;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
+  padding: 82px 50px 62px 50px;
+}
+
+.price_list .cost {
+  width: 100%;
+  padding: 30px 0;
+  background: url(../img/ип.gif) 50% 50% / cover;
+  -webkit-backdrop-filter: blur(50px);
+  backdrop-filter: blur(50px);
+  background-attachment: fixed;
+  margin: 40px 0;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+
+.price_list .cost h4 {
+  text-transform: uppercase;
+  font-size: 25px;
+  color: #ffc400;
+  font-family: 'Rubik', sans-serif;
+}
+
+.price_list .txt-bg {
+  position: absolute;
+  width: 182px;
+  height: 182px;
+}
+
+.price_list .txt-bg:nth-of-type(1) {
+  -webkit-animation: txt_bg 2s infinite linear;
+  animation: txt_bg 2s infinite linear;
+  top: 0;
+  left: 0;
+  border-top: 10px solid #FF0000;
+  border-left: 10px solid #FF0000;
+}
+
+.price_list .txt-bg:nth-of-type(2) {
+  -webkit-animation: txt_bg2 2s infinite linear;
+  animation: txt_bg2 2s infinite linear;
+  -webkit-animation-delay: 1s;
+  animation-delay: 1s;
+  bottom: 0;
+  left: 0;
+  border-bottom: 10px solid #ffffff;
+  border-left: 10px solid #ffffff;
+}
+
+.price_list .txt-bg:nth-of-type(4) {
+  -webkit-animation: txt_bg2 2s infinite linear;
+  animation: txt_bg2 2s infinite linear;
+  -webkit-animation-delay: 1s;
+  animation-delay: 1s;
+  top: 0;
+  right: 0;
+  border-top: 10px solid #ffffff;
+  border-right: 10px solid #ffffff;
+}
+
+.price_list .txt-bg:nth-of-type(5) {
+  -webkit-animation: txt_bg 2s infinite linear;
+  animation: txt_bg 2s infinite linear;
+  bottom: 0;
+  right: 0;
+  border-bottom: 10px solid #FF0000;
+  border-right: 10px solid #FF0000;
+}
+
+.price_list .price_txt {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-justify-content: space-around;
+  -ms-flex-pack: distribute;
+  justify-content: space-around;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-flex-wrap: wrap;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+}
+
+.price_list .price_txt .vid {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  margin: 0 10px;
+  min-width: 312px;
+  max-width: 312px;
+  background: url(../img/grey-geometrical-shapes-background.jpg) 50% 50% / cover;
+  padding: 20px;
+  background-attachment: fixed;
+  color: #ffffff;
+  font-family: 'Rubik', sans-serif;
+  border-top: 2px red solid;
+  border-left: 2px red solid;
+  border-bottom: 2px #ffffff solid;
+  border-right: 2px #ffffff solid;
+  margin-bottom: 20px;
+}
+
+.price_list .price_txt .vid h3 {
+  font-size: 24px;
+  margin-bottom: 20px;
+  border-bottom: 2px #ff0000 solid;
+}
+
+.price_list .price_txt .vid P {
+  text-align: left;
+}
+
+@-webkit-keyframes txt_bg2 {
+  0% {
+    border-color: #ffffff;
+  }
+
+  50% {
+    border-color: rgba(255, 0, 0, 0);
+  }
+
+  60% {
+    border-color: rgba(255, 0, 0, 0);
+  }
+
+  100% {
+    border-color: #ffffff;
+  }
+}
+
+@keyframes txt_bg2 {
+  0% {
+    border-color: #ffffff;
+  }
+
+  50% {
+    border-color: rgba(255, 0, 0, 0);
+  }
+
+  60% {
+    border-color: rgba(255, 0, 0, 0);
+  }
+
+  100% {
+    border-color: #ffffff;
+  }
+}
+
+@-webkit-keyframes txt_bg {
+  0% {
+    border-color: #ff0000;
+  }
+
+  50% {
+    border-color: rgba(0, 0, 0, 0);
+  }
+
+  60% {
+    border-color: rgba(0, 0, 0, 0);
+  }
+
+  100% {
+    border-color: #ff0000;
+  }
+}
+
+@keyframes txt_bg {
+  0% {
+    border-color: #ff0000;
+  }
+
+  50% {
+    border-color: rgba(0, 0, 0, 0);
+  }
+
+  60% {
+    border-color: rgba(0, 0, 0, 0);
+  }
+
+  100% {
+    border-color: #ff0000;
+  }
+}
+
+/* =================== PRICE ======================== */
+
+/* =================== PRICE ======================== */
+
+/* =================== PRICE ======================== */
+
 @-webkit-keyframes bok_anim {
   0% {
     padding-top: 0;
@@ -918,7 +1201,6 @@ header .navbar-light .navbar-toggler-icon {
 
   .about_us .about .about_div .about_text p {
     text-align: justify;
-    width: 80%;
   }
 
   .about_us .about .about_div .about_text:nth-of-type(even) {
