@@ -772,10 +772,11 @@ header .navbar-light .navbar-toggler-icon {
 .price_list .cost {
   width: 100%;
   padding: 30px 0;
-  background: url(../img/ип.gif) 50% 50% / cover;
+  background: blue;
   -webkit-backdrop-filter: blur(50px);
   backdrop-filter: blur(50px);
   background-attachment: fixed;
+  border-radius: 25px;
   margin: 40px 0;
   display: -webkit-box;
   display: -webkit-flex;
@@ -1110,7 +1111,7 @@ header .navbar-light .navbar-toggler-icon {
     -webkit-align-items: center;
     -ms-flex-align: center;
     align-items: center;
-    padding: 50px 50px;
+    padding: 50px 35px;
   }
 
   .about_us .bok {
