@@ -14,6 +14,9 @@
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Rubik&display=swap" rel="stylesheet">
     <!-- =================Ссылки на файлы============= -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css">
+    <link rel='stylesheet prefetch'
+        href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css'>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css"
         integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">
     <!-- font-family: 'Rubik', sans-serif; -->
@@ -26,6 +29,8 @@
     <link rel="stylesheet" href="css/animate.css">
     <link rel="stylesheet" href="fonts/fonts.css">
     <script defer src="js/jquery-3.2.1.min.js"></script>
+    <script defer src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+    <script defer src="js/parallax.min.js"></script>
     <script defer src="js/preloader.js"></script>
     <script defer src="js/script.js"></script>
 
@@ -39,8 +44,49 @@
 
 <body>
     <header>
-        <div class="container">
-            <nav class="navbar navbar-expand-lg navbar-light">
+
+
+
+        <div class="header-overlay">
+            <div class="nav-container">
+
+                <div class="logo"><img src="img/logo.png" alt=""></div>
+
+                <!-- НАВИГАЦИЯ -->
+                <div class="nav-wrapper">
+
+                    <!-- Навигация для десктопа -->
+                    <ul class="nav">
+                        <li class="nav__item"><a href="#" class="nav__link">Главная</a></li>
+                        <li class="nav__item"><a href="#" class="nav__link">Наши работы</a></li>
+                        <li class="nav__item"><a href="#" class="nav__link">Прайс лист</a></li>
+                        <li class="nav__item"><a href="" class="nav__link phone-num">+998 90 015 36 24</a></li>
+                    </ul>
+
+                    <!-- Кнопка для мобильной навигации -->
+                    <div id="menu-togle" class="menu-icon">
+                        <div class="menu-icon-line"></div>
+                    </div>
+
+                    <!-- Мобильная навигация -->
+                    <div id="mobile-nav" class="mobile-nav">
+                        <div class="mobile-nav__title">Навигация</div>
+                        <ul class="mobile-nav__list">
+                            <li class="mobile-nav__item"><a href="#" class="mobile-nav__link">Главная</a></li>
+                            <li class="mobile-nav__item"><a href="#" class="mobile-nav__link">Наши работы</a></li>
+                            <li class="mobile-nav__item"><a href="#" class="mobile-nav__link">Прайс лист</a></li>
+                            <li class="mobile-nav__item"><a href="#" class="mobile-nav__link">+998 90 015 36 24</a></li>
+                        </ul>
+                    </div>
+
+
+                </div>
+                <!-- // НАВИГАЦИЯ -->
+
+            </div>
+        </div>
+
+        <!-- <nav class="navbar navbar-expand-lg navbar-light">
                 <a class="wow fadeInLeft navbar-brand" href="#"><img src="img/Group 1.png" alt=""></a>
                 <button class="navbar-toggler" type="button" data-toggle="collapse"
                     data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
@@ -64,8 +110,9 @@
                         </li>
                     </ul>
                 </div>
-            </nav>
-        </div>
+            </nav> -->
+
+
     </header>
     <div class="red_line"></div>
     <main>
@@ -199,7 +246,7 @@
         <div class="red_line"></div>
 
 
-        <section class="price_list">
+        <section class="price_list parallax-window" data-parallax="scroll" data-image-src="img/23964.jpg" id="section00">
             <div class="container">
                 <h2 class="wow bounceInUp title" data-wow-duration="1s">
                     Прайс Лист
@@ -212,14 +259,19 @@
                             <h3>Сайт Визитка</h3>
                             <p>1) Создаем красивый дизайн<br> 2) Создаем удобную навигацию <br>3) Делаем адаптацию для
                                 мобильных устройств <br> 4) Отправка данных на почту <br> 5) Работа по макету клиента
-                                <br> (если он присутствует) <br> 6) Создание логотипа <br> (по желанию) <br> 7) Создание различных анимаций
+                                <br> (если он присутствует) <br> 6) Создание логотипа <br> (по желанию) <br> 7) Создание
+                                различных анимаций
                             </p>
                         </div>
                         <div class="vid">
                             <h3>Сайт Блог</h3>
                             <p>1) Создаем красивый дизайн<br> 2) Создаем удобную навигацию <br>3) Делаем адаптацию для
                                 мобильных устройств <br> 4) Отправка данных на почту <br> 5) Работа по макету клиента
-                                <br> (если он присутствует) <br> 6) Создание логотипа <br> (по желанию) <br> 7) Подключение CMS системы <br> 8) Удобная панель управления <br> 9) Регистрация на сайте<br> 10) Создание различных анимаций <br> 11) Добавление постов <br>  (картинки, ссылки, текст ) <br> </p>
+                                <br> (если он присутствует) <br> 6) Создание логотипа <br> (по желанию) <br> 7)
+                                Подключение CMS системы <br> 8) Удобная панель управления <br> 9) Регистрация на
+                                сайте<br> 10) Создание различных анимаций <br> 11) Добавление постов <br> (картинки,
+                                ссылки, текст ) <br>
+                            </p>
                         </div>
                         <div class="vid">
                             <h3>Сайт Визитка</h3>
@@ -232,13 +284,13 @@
                     <div class="txt-bg"></div>
                 </div>
 
-                <div class="cost">
+                <!-- <div class="cost">
                     <h4>Цена договорная (Не дорого)</h4>
                 </div>
 
                 <h2 class="wow bounceInUp title" data-wow-duration="1s">
                     Мы в социальных сетях:
-                </h2>
+                </h2> -->
                 <div class="soc_icons">
                     <div class="soc_div">
                         <div>
