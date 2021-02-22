@@ -29,6 +29,13 @@ const mobileNavContainer = document.querySelector('#mobile-nav');
 menuToggle.onclick = function () {
     menuToggle.classList.toggle('menu-icon-active');
     mobileNavContainer.classList.toggle('mobile-nav--active');
+    // if ($(".mobile-nav").css("display", "block")) {
+    //     $(".mobile-nav").css("display", "none");
+    // }
+    // else{
+    //     $(".mobile-nav").css("display", "block");
+    // }
+    
 }
 
 
