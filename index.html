@@ -4,34 +4,30 @@
 <head>
     <meta charset="UTF-8">
     <!-- <meta name="theme-color" content="#1e1043"> -->
-    <meta name="theme-color" content="#201F1F">
-    <meta name="msapplication-navbutton-color" content="#201F1F">
-    <meta name="apple-mobile-web-app-status-bar-style" content="#201F1F">
+    <meta name="theme-color" content="#000000">
+    <meta name="msapplication-navbutton-color" content="#000000">
+    <meta name="apple-mobile-web-app-status-bar-style" content="#000000">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="shortcut icon" href="img/logo1.png" />
-    <title>WEB GROUP</title>
+    <link rel="icon" href="img/logotitle.png">
+    <title>Kasimov Timur</title>
+    <!-- ===========CCЫЛКИ================= -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
     <!-- ===========ШРИФТЫ================= -->
-    <link rel="preconnect" href="https://fonts.gstatic.com">
-    <link href="https://fonts.googleapis.com/css2?family=Rubik&display=swap" rel="stylesheet">
-    <!-- =================Ссылки на файлы============= -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css">
-    <link rel='stylesheet prefetch'
-        href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css'>
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css"
-        integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">
-    <!-- font-family: 'Rubik', sans-serif; -->
-    <link rel="preconnect" href="https://fonts.gstatic.com">
-    <link href="https://fonts.googleapis.com/css2?family=Rhodium+Libre&display=swap" rel="stylesheet">
-    <!-- font-family: 'Rhodium Libre', serif; -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@700&display=swap" rel="stylesheet">
+    <!-- font-family: 'Nunito', sans-serif; -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Tourney:ital,wght@1,100&display=swap" rel="stylesheet">
+    <!-- font-family: 'Tourney', cursive; -->
     <!-- ============================================== -->
 
     <link rel="stylesheet" href="css/style-min.css">
+    <link rel="stylesheet" href="css/menu.css">
     <link rel="stylesheet" href="css/animate.css">
-    <link rel="stylesheet" href="fonts/fonts.css">
     <script defer src="js/jquery-3.2.1.min.js"></script>
-    <script defer src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
-    <script defer src="js/parallax.min.js"></script>
-    <script defer src="js/preloader.js"></script>
     <script defer src="js/script.js"></script>
 
     <script src="js/wow.min.js"></script>
@@ -44,246 +40,63 @@
 
 <body>
     <header>
-        <div class="header-overlay">
-            <div class="nav-container">
-
-                <div class="logo"><img src="img/logo.png" alt=""></div>
-
-                <!-- НАВИГАЦИЯ -->
-                <div class="nav-wrapper">
-
-                    <!-- Навигация для десктопа -->
-                    <ul class="nav">
-                        <li class="nav__item"><a href="#" class="nav__link">Главная</a></li>
-                        <li class="nav__item"><a href="#" class="nav__link">Наши работы</a></li>
-                        <li class="nav__item"><a href="#" class="nav__link">Прайс лист</a></li>
-                        <li class="nav__item"><a href="" class="nav__link phone-num">+998 90 015 36 24</a></li>
-                    </ul>
-
-                    <!-- Кнопка для мобильной навигации -->
-                    <div id="menu-togle" class="menu-icon">
-                        <div class="menu-icon-line"></div>
-                    </div>
-
-                    <!-- Мобильная навигация -->
-                    <div id="mobile-nav" class="mobile-nav">
-                        <div class="mobile-nav__title">Навигация</div>
-                        <ul class="mobile-nav__list">
-                            <li class="mobile-nav__item"><a href="#" class="mobile-nav__link">Главная</a></li>
-                            <li class="mobile-nav__item"><a href="#" class="mobile-nav__link">Наши работы</a></li>
-                            <li class="mobile-nav__item"><a href="#" class="mobile-nav__link">Прайс лист</a></li>
-                            <li class="mobile-nav__item"><a href="#" class="mobile-nav__link">+998 90 015 36 24</a></li>
-                        </ul>
-                    </div>
-
-
+        <div class="container-fluid">
+            <div class="logo">
+                <div class="logo_div">
+                    <img src="img/logo.png" alt="">
                 </div>
-                <!-- // НАВИГАЦИЯ -->
+            </div>
+            <content>
+                <input id="hamburger" class="hamburger" type="checkbox" />
+                <label class="hamburger" for="hamburger">
+                    <i></i>
+                    <text>
+                        <close>close</close>
+                        <open>Меню</open>
+                    </text>
+                </label>
+                <section class="drawer-list">
+                    <ul>
+                        <li><a href="#">dashboard</a></li>
+                        <li><a href="#">notifications</a></li>
+                        <li><a href="#">system administration</a></li>
+                        <li><a href="#">support</a></li>
+                    </ul>
+                </section>
+            </content>
+        </div>
+    </header>
 
+    <main>
+        <div class="container-fluid">
+            <div class="main_div">
+                <div class="col-6 main_text">
+                    <!-- <h1>WEBGROUP</h1> -->
+
+                    <div class="sign-wrap-1">
+                        <span class="sign_word">WEBGROUP</span>
+                    </div>
+
+                    <p>Далеко-далеко, за словесными горами в стране гласных и согласных живут рыбные тексты. Точках,
+                        вдали грустный имеет его до назад напоивший ручеек. Рот точках грустный пустился последний
+                        текста по всей диких, несколько большой до.</p>
+                    <div class="social_media">
+                        <div class="soc_icon"><img src="img/telegram.png" alt=""></div>
+                        <div class="soc_icon"><img src="img/instagram.png" alt=""></div>
+                        <div class="soc_icon"><img src="img/facebook.png" alt=""></div>
+                    </div>
+                </div>
+                <div class="col-6 main_gif">
+                    <img src="img/Static website.gif" alt="">
+                    <a href="#">Заказать <span>WEBSITE</span></a>
+                </div>
             </div>
         </div>
-
-
-    </header>
-    <div class="red_line"></div>
-    <main>
-        <section class="banner">
-            <div class="container">
-                <div class="wow zoomIn banner_div" data-wow-duration="3s">
-                    <svg viewBox="0 0 1320 300">
-
-                        <!-- Symbol -->
-                        <symbol id="s-text">
-                            <text text-anchor="middle" x="50%" y="50%" dy=".35em">
-                                WEB GROUP
-                            </text>
-                        </symbol>
-
-                        <!-- Duplicate symbols -->
-                        <use xlink:href="#s-text" class="text"></use>
-                        <use xlink:href="#s-text" class="text"></use>
-                        <use xlink:href="#s-text" class="text"></use>
-                        <use xlink:href="#s-text" class="text"></use>
-                        <use xlink:href="#s-text" class="text"></use>
-
-                    </svg>
-                    <div class="banner_line"></div>
-                    <p><span id="print">Почему бы не работать с WEB Group для продвижения бизнеса?!</span><span
-                            class="merts">|</span></p>
-                </div>
-            </div>
-            <img class="wow zoomIn" src="img/mac.png" alt="">
-        </section>
-
-
-        <div class="red_line"></div>
-
-
-        <section class="about_us container-fluid">
-
-            <div class="bok">
-                <img src="img/Group 3.png" alt="">
-                <img src="img/Vector.png" alt="">
-                <img src="img/Group 3.png" alt="">
-                <img src="img/Vector (4).png" alt="">
-                <img src="img/Group 3.png" alt="">
-                <img src="img/Vector (6).png" alt="">
-                <img src="img/Group 3.png" alt="">
-            </div>
-
-            <div class="about">
-                <h2 class="wow bounceInUp" data-wow-duration="1s">О нас</h2>
-                <div class="about_div">
-                    <div class="wow fadeInLeft about_img" data-wow-duration="1s">
-                        <div class="image_bg_shadow">
-                            <img src="img/Rectangle 8.png" alt="">
-                        </div>
-                    </div>
-                    <div class="about_text">
-                        <h3 class="wow fadeInRight" data-wow-duration="1s">Разработка сайтов</h3>
-                        <p class="wow fadeInRight " data-wow-delay="0.3s" data-wow-duration="1s">Создание уникальных
-                            сайтов для любой сферы. Наши
-                            веб-дизайнеры и разработчики имеют большой
-                            опыт в сфере разработки сайтов и имеют сертификаты и лицензии. WEB Group готов создать для
-                            вас сайт который поможет в развитии бизнеса.<span class="merts">|</span></p>
-                    </div>
-                </div>
-                <div class="about_div">
-                    <div class="about_text">
-                        <h3 class="wow fadeInLeft" data-wow-duration="1s">Посты для социальных сетей</h3>
-                        <p class="wow fadeInLeft" data-wow-delay="0.3s" data-wow-duration="1s">Социальные сети как
-                            Instagram, Facebook хорошо известны в
-                            публике. И что бы хорошо развивать
-                            свой аккаунт придётся публиковать красивые посты. WEB Group при этом вам поможет. Мы для вас
-                            создадим красивые посты на любой вкус. Мы гарантируем на качество и на завлекательность
-                            поста. <span class="merts">|</span></p>
-                    </div>
-                    <div class="wow fadeInRight about_img" data-wow-duration="1s">
-                        <div class="image_bg_shadow">
-                            <img src="img/Rectangle 10.png" alt="">
-                        </div>
-                    </div>
-                </div>
-                <div class="about_div">
-                    <div class="wow fadeInRight about_img" data-wow-duration="1s">
-                        <div class="image_bg_shadow">
-                            <img src="img/Rectangle 10.png" alt="">
-                        </div>
-                    </div>
-                    <div class="about_text">
-                        <h3 class="wow fadeInLeft" data-wow-duration="1s">Посты для социальных сетей</h3>
-                        <p class="wow fadeInLeft" data-wow-delay="0.3s" data-wow-duration="1s">Социальные сети как
-                            Instagram, Facebook хорошо известны в
-                            публике. И что бы хорошо развивать
-                            свой аккаунт придётся публиковать красивые посты. WEB Group при этом вам поможет. Мы
-                            создадим красивые посты на любой вкус. Мы гарантируем качество и привлекательность
-                            поста. <span class="merts">|</span></p>
-                    </div>
-                </div>
-
-
-
-                <h2 class="wow bounceInUp title" data-wow-duration="1s">Наши работы</h2>
-                <div class="our_works">
-                    <div class="work">
-                        <!-- <img src="img/Shop one page.png" alt=""> -->
-                        <img src="img/Corporate Landing Page.png" alt="">
-                        <img src="img/Waxom Hemepage.png" alt="">
-                    </div>
-                    <div class="work">
-                        <img src="img/free psd.png" alt="">
-                    </div>
-                    <div class="work">
-                        <img src="img/Treehouse-Home.png" alt="">
-                        <img src="img/Premium Ecommerce Website Template PSD for Free Download - cssauthor.com.png"
-                            alt="">
-                    </div>
-                </div>
-            </div>
-
-            <div class="bok">
-                <img src="img/Vector (1).png" alt="">
-                <img src="img/Group 3.png" alt="">
-                <img src="img/Vector (2).png" alt="">
-                <img src="img/Group 3.png" alt="">
-                <img src="img/Vector (3).png" alt="">
-                <img src="img/Group 3.png" alt="">
-                <img src="img/Vector (5).png" alt="">
-            </div>
-
-        </section>
-
-
-        <div class="red_line"></div>
-
-
-        <section class="price_list parallax-window" data-parallax="scroll" data-image-src="img/23964.jpg" id="section00">
-            <div class="container">
-                <h2 class="wow bounceInUp title" data-wow-duration="1s">
-                    Прайс Лист
-                </h2>
-                <div class="price">
-                    <div class="txt-bg"></div>
-                    <div class="txt-bg"></div>
-                    <div class="price_txt">
-                        <div class="vid">
-                            <h3>Сайт Визитка</h3>
-                            <p>1) Создаем красивый дизайн<br> 2) Создаем удобную навигацию <br>3) Делаем адаптацию для
-                                мобильных устройств <br> 4) Отправка данных на почту <br> 5) Работа по макету клиента
-                                <br> (если он присутствует) <br> 6) Создание логотипа <br> (по желанию) <br> 7) Создание
-                                различных анимаций
-                            </p>
-                        </div>
-                        <div class="vid">
-                            <h3>Сайт Блог</h3>
-                            <p>1) Создаем красивый дизайн<br> 2) Создаем удобную навигацию <br>3) Делаем адаптацию для
-                                мобильных устройств <br> 4) Отправка данных на почту <br> 5) Работа по макету клиента
-                                <br> (если он присутствует) <br> 6) Создание логотипа <br> (по желанию) <br> 7)
-                                Подключение CMS системы <br> 8) Удобная панель управления <br> 9) Регистрация на
-                                сайте<br> 10) Создание различных анимаций <br> 11) Добавление постов <br> (картинки,
-                                ссылки, текст ) <br>
-                            </p>
-                        </div>
-                        <div class="vid">
-                            <h3>Сайт Визитка</h3>
-                            <p>Далеко-далеко, за словесными горами в стране гласных и согласных живут рыбные тексты.
-                                Подзаголовок, буквенных родного точках однажды вершину возвращайся использовало
-                                продолжил снова!</p>
-                        </div>
-                    </div>
-                    <div class="txt-bg"></div>
-                    <div class="txt-bg"></div>
-                </div>
-
-                <!-- <div class="cost">
-                    <h4>Цена договорная (Не дорого)</h4>
-                </div>
-
-                <h2 class="wow bounceInUp title" data-wow-duration="1s">
-                    Мы в социальных сетях:
-                </h2> -->
-                <div class="soc_icons">
-                    <div class="soc_div">
-                        <div>
-                            <img src="" alt="">
-                        </div>
-                    </div>
-                    <div class="soc_div">
-                        <div>
-                            <img src="" alt="">
-                        </div>
-                    </div>
-                    <div class="soc_div">
-                        <div>
-                            <img src="" alt="">
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
-
     </main>
-    <footer></footer>
+
+
+
+
     <!-- ============================================== -->
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
         integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
