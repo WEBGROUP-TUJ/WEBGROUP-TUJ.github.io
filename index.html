@@ -22,19 +22,27 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Tourney:ital,wght@1,100&display=swap" rel="stylesheet">
     <!-- font-family: 'Tourney', cursive; -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lobster&display=swap" rel="stylesheet">
+    <!-- font-family: 'Lobster', cursive; -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=PT+Sans:ital@1&display=swap" rel="stylesheet">
+    <!-- font-family: 'PT Sans', sans-serif; -->
     <!-- ============================================== -->
 
     <link rel="stylesheet" href="css/style-min.css">
     <link rel="stylesheet" href="css/menu.css">
     <link rel="stylesheet" href="css/animate.css">
     <script defer src="js/jquery-3.2.1.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+    <script src="js/parallax.min.js"></script>
     <script defer src="js/script.js"></script>
 
     <script src="js/wow.min.js"></script>
     <script>
-        new WOW({
-            mobile: false,       // default
-        }).init();
+        new WOW().init();
     </script>
 </head>
 
@@ -43,7 +51,7 @@
         <div class="container-fluid">
             <div class="logo">
                 <div class="logo_div">
-                    <img src="img/logo.png" alt="">
+                    <img class="wow bounce" src="img/logo.png">
                 </div>
             </div>
             <content>
@@ -68,30 +76,68 @@
     </header>
 
     <main>
-        <div class="container-fluid">
-            <div class="main_div">
-                <div class="col-6 main_text">
-                    <!-- <h1>WEBGROUP</h1> -->
+        <section class="main">
+            <div class="container-fluid">
+                <div class="main_div">
+                    <div class="col-6 main_text">
+                        <!-- <h1>WEBGROUP</h1> -->
 
-                    <div class="sign-wrap-1">
-                        <span class="sign_word">WEBGROUP</span>
-                    </div>
+                        <div class="sign-wrap-1 wow fadeInLeft">
+                            <span class="sign_word">WEBGROUP</span>
+                        </div>
 
-                    <p>Далеко-далеко, за словесными горами в стране гласных и согласных живут рыбные тексты. Точках,
-                        вдали грустный имеет его до назад напоивший ручеек. Рот точках грустный пустился последний
-                        текста по всей диких, несколько большой до.</p>
-                    <div class="social_media">
-                        <div class="soc_icon"><img src="img/telegram.png" alt=""></div>
-                        <div class="soc_icon"><img src="img/instagram.png" alt=""></div>
-                        <div class="soc_icon"><img src="img/facebook.png" alt=""></div>
+                        <div class="line_head wow fadeInLeft" data-wow-delay="0.2s"></div>
+
+                        <p class="wow fadeInLeft" data-wow-delay="0.4s">Далеко-далеко, за словесными горами в стране гласных и согласных живут рыбные тексты. Точках,
+                            вдали грустный имеет его до назад напоивший ручеек. Рот точках грустный пустился последний
+                            текста по всей диких, несколько большой до.</p>
+
+                        <div class="head_line"></div>
+                        <div class="social_media">
+                            <div class="wow fadeInLeft soc_icon" data-wow-delay="1s"><img src="img/telegram.png" alt=""></div>
+                            <div class="wow fadeInLeft soc_icon" data-wow-delay="0.8s"><img src="img/instagram.png" alt=""></div>
+                            <div class="wow fadeInLeft soc_icon" data-wow-delay="0.6s"><img src="img/facebook.png" alt=""></div>
+                        </div>
                     </div>
-                </div>
-                <div class="col-6 main_gif">
-                    <img src="img/Static website.gif" alt="">
-                    <a href="#">Заказать <span>WEBSITE</span></a>
+                    <div class="col-6 main_gif">
+                        <img src="img/Static website.gif" alt="">
+                        <a class="wow fadeInUp" href="#">Заказать <span>WEBSITE</span></a>
+                    </div>
                 </div>
             </div>
-        </div>
+        </section>
+
+        <div class="through_line"></div>
+
+        <section class="adpt">
+            <div class="adpt_left parallax-window" data-parallax="scroll" data-image-src="./img/bg.jpg"></div>
+            <div class="adpt_right">
+                <h3>Адаптивная версия сайта</h3>
+                <div class="adpt_line"></div>
+                <p class="adpt_p">Адаптивная версия сайта — это специальный дизайн веб-страниц, при котором элементы
+                    сайта меняют свой
+                    размер и расположение при разных разрешениях дисплея. Сайт автоматически адаптируется под размеры
+                    устройства, на котором он открыт, будь то монитор ПК, смартфон или планшет.</p>
+
+                <div class="adpt_icons">
+                    <div class="icons_div wow fadeInRight" data-wow-delay="0.2s">
+                        <img src="img/television.png" alt="">
+                        <p>Версия для телевизоров (размер экрана от 2000px)</p>
+                    </div>
+                    <div class="icons_div wow fadeInRight" data-wow-delay="0.4s">
+                        <img src="img/laptop.png" alt="">
+                        <p>Версия для компьютеров (размер экрана от 1000px)</p>
+                    </div>
+                    <div class="icons_div wow fadeInRight" data-wow-delay="0.6s">
+                        <img src="img/smartphone.png" alt="">
+                        <p>Версия для телефонов (размер экрана от 400px)</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <div class="through_line"></div>
+
     </main>
 
 
